@@ -1,0 +1,25 @@
+// Plum Tree Garden
+// phishing.html
+
+// simple / harmless example of website phishing
+
+<body>
+
+<p><h1> Winner!!! Click button to collect your prize!!!</h1></p>
+
+<button onclick="badCode()"> Click Here </button>
+
+<p id="demo"></p>
+
+
+<script>
+  document.getElementByID("demo").onclick = function() { badCode() };
+
+  function badCode()
+  {
+    document.getElementByID("demo").innerHTML = "U R Hacked!";
+    document.body.style.backgroundColor = "red";
+  }
+</script>
+
+</body>
